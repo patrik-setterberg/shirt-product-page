@@ -32,3 +32,34 @@ $tablet-max-width: 1023px;
     @content;
   }
 }
+
+:root {
+  --default-spacing: 0.75rem;
+  --container-width: 100%;
+
+  @include tablet {
+    --default-spacing: 1rem;
+  }
+
+  @include desktop {
+    --default-spacing: 1.25rem;
+    --container-width: 92.5rem; // 1480px
+  }
+}
+
+// Colors.
+$header-top-background: #1d1d1b;
+$header-nav-background: #ffffff;
+$logo-background: #d8d8d8;
+$main-body-background-top: #ececec;
+$main-body-background-bottom: #ffffff;
+$social-background: #f1f1f1;
+$footer-background: #000000;
+$main-button-background: #141527;
+$size-selector-button-background: #ffffff;
+$size-selector-button-background-active: #1d1d1b;
+$nyhet-label-background: #000000;
+$kampanj-label-background: #2c2f3e;
+
+$text-black: #000000;
+$sale-price: #d21212;
