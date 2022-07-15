@@ -45,3 +45,16 @@ select {
     scroll-behavior: auto !important;
   }
 }
+
+.main {
+  @include tablet-down {
+    padding-top: 10rem;
+  }
+}
+
+.header {
+  @include tablet-down {
+    position: absolute;
+    width: 100%;
+  }
+}

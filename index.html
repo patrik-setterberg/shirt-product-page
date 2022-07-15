@@ -10,7 +10,7 @@
     </title>
   </head>
   <body>
-    <header class="header">
+    <header class="header" id="header">
       <div class="header-top">
         <div class="header-top__inner">
           <div class="header-top__info">
@@ -32,14 +32,29 @@
       </div>
       <nav class="main-menu">
         <div class="main-menu__inner">
-          <ul class="main-menu__product-categories">
+          <div class="hamburger">
+            <label class="hamburger__hidden-label" for="hamburger-checkbox"
+              >Menu</label
+            >
+            <input
+              type="checkbox"
+              class="hamburger__checkbox"
+              id="hamburger-checkbox"
+              title="Menu"
+            />
+            <div class="hamburger__focus-outline"></div>
+            <span class="hamburger__line hamburger__line--top"></span>
+            <span class="hamburger__line hamburger__line--center"></span>
+            <span class="hamburger__line hamburger__line--bottom"></span>
+          </div>
+          <ul class="main-menu__list main-menu__product-categories">
             <li><a href="#">Herr</a></li>
             <li><a href="#">Dam</a></li>
             <li><a href="#">Märken</a></li>
             <li><a href="#">Rea</a></li>
           </ul>
           <span class="main-menu__logo">Logo</span>
-          <ul class="main-menu__additional-links">
+          <ul class="main-menu__list main-menu__additional-links">
             <li><a href="#">Sök</a></li>
             <li><a href="#">Lista (2)</a></li>
             <li><a class="shopping-cart" href="#">Kundkorg (2)</a></li>
@@ -47,7 +62,9 @@
         </div>
       </nav>
     </header>
-    <main>Shirt product page.</main>
+    <main class="main">Shirt product page.</main>
     <footer>footer.</footer>
+
+    <script src="./js/main-menu.js"></script>
   </body>
 </html>
