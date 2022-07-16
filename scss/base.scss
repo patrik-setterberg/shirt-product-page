@@ -17,6 +17,8 @@ html {
 body {
   min-height: 100vh;
   font-family: "Roboto", sans-serif;
+  display: flex;
+  flex-direction: column;
 }
 
 img {
@@ -28,6 +30,10 @@ button,
 textarea,
 select {
   font: inherit;
+}
+
+p {
+  margin: 0;
 }
 
 // Reduced animations for users who prefer reduced motion.
@@ -47,6 +53,8 @@ select {
 }
 
 .main {
+  flex: 1;
+
   @include tablet-down {
     padding-top: 10rem;
   }

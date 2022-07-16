@@ -1,0 +1,70 @@
+.footer {
+  background-color: $footer-background;
+}
+
+.footer__inner {
+  max-width: var(--container-width);
+  padding: 3.125rem var(--default-spacing) var(--default-spacing);
+  margin: 0 auto;
+  color: white;
+
+  @include tablet {
+    padding-top: 4rem;
+    
+  }
+
+  @include desktop {
+    padding-top: 6.25rem;
+  }
+}
+
+.footer__menu {
+  display: flex;
+  padding-bottom: 3.125rem;
+  border-bottom: 1px solid $footer-element-divider;
+
+  @include tablet {
+    padding-bottom: 4rem;
+  }
+
+  @include desktop {
+    padding-bottom: 7.5rem;
+  }
+}
+
+.footer__company-description {
+  max-width: 100%;
+  margin: 0 auto;
+  color: #999;
+  font-size: 0.875rem;
+  text-align: center;
+  line-height: 1.77;
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+
+  & span {
+    font-weight: 600;
+  }
+
+  @include tablet {
+    max-width: 90%;
+    padding-top: 3.125rem;
+    padding-bottom: 3.125rem;
+  }
+
+  @include desktop {
+    max-width: 82%;
+    padding-top: 4rem;
+    padding-bottom: 3.5rem;
+  }
+}
+
+.footer__copyright-text {
+  font-size: 0.8125rem;
+  text-transform: uppercase;
+  text-align: center;
+  color: #777;
+  padding-top: var(--default-spacing);
+  padding-bottom: 0.5rem;
+  border-top: 1px solid $footer-element-divider;
+}
