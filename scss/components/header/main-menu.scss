@@ -29,6 +29,12 @@
   & li {
     display: flex;
 
+    & + li {
+      @include tablet-down {
+        margin-top: 0.75rem;
+      }
+    }
+
     @include desktop {
       &:not(:last-child) {
         margin-right: 2em;
@@ -62,13 +68,31 @@
   display: block;
 }
 
-.main-menu__logo {
+.main-menu__product-categories {
+  @include tablet-down {
+    margin-top: calc(var(--default-spacing) * 2);
+  }
+}
+
+.main-menu__additional-links {
+  @include tablet-down {
+    margin-top: 0;
+    padding-top: var(--default-spacing);
+    border-top: 1px solid #eeeeee; // VARIABLE?
+  }
+}
+
+.main-menu__logo,
+.main-menu__logo:visited {
   display: flex;
-  background-color: $logo-background;
   justify-content: center;
   align-items: center;
+  background-color: $logo-background;
+  border: 1px solid #aaa;
   width: 10rem;
   font-size: 1rem;
+  color: $text-black;
+  text-decoration: none;
   text-transform: uppercase;
   order: -1;
 
