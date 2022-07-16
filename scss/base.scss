@@ -36,6 +36,16 @@ p {
   margin: 0;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+
 ul {
   list-style-type: none;
   padding: 0;
@@ -58,9 +68,10 @@ ul {
 }
 
 .main {
-  flex: 1;
+  flex: 1 0 auto;
   display: flex;
   flex-direction: column;
+  background: linear-gradient(to bottom, $main-body-background-top, $main-body-background-bottom 95%);
 
   @include tablet-down {
     padding-top: 10rem;

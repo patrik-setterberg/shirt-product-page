@@ -1,0 +1,153 @@
+.newsletter {
+  margin-bottom: 2.25rem;
+}
+
+.newsletter__inner {
+  max-width: var(--container-width);
+  margin: 0 auto;
+
+  @include desktop {
+    padding: 0 var(--default-spacing);
+  }
+}
+
+.newsletter__form {
+  display: flex;
+  flex-direction: column;
+  background: url("../../img/newsletter_bg.webp") no-repeat;
+  background-position: 58% center;
+  background-size: cover;
+  position: relative;
+  transition: background-position 0.2s ease;
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(34, 34, 34, 0.5);
+  }
+
+  @include tablet-down {
+    padding: 2.5rem var(--default-spacing);
+  }
+
+  @include desktop {
+    flex-direction: row;
+    background-position: center;
+    min-height: 20rem;
+  }
+}
+
+.newsletter__text,
+.newsletter__form-elements {
+  display: flex;
+  align-items: center;
+  flex: 1;
+  color: $text-white;
+}
+
+.newsletter__text {
+  flex-direction: column;
+  justify-content: center;
+  z-index: 1;
+
+  & h3 {
+    text-transform: uppercase;
+    font-size: 2.5rem;
+    font-weight: 400;
+    margin-bottom: 0.5rem;
+
+    @include desktop {
+      margin-bottom: 1.875rem;
+    }
+  }
+
+  & span {
+    font-size: 0.9375rem;
+    font-weight: 500;
+    line-height: 1.78;
+    color: #cfcfcf;
+    text-align: center;
+
+    @include desktop {
+      max-width: 55%;
+    }
+  }
+
+  @include tablet-down {
+    margin-bottom: 1.5rem;
+  }
+
+  @include desktop {
+    padding-left: 8rem;
+    flex-basis: 55%;
+  }
+}
+
+.newsletter__form-elements {
+  border: 0;
+  margin: 0;
+  padding: 0;
+  flex-direction: column;
+  justify-content: center;
+  z-index: 1;
+
+  @include tablet-up {
+    flex-direction: row;
+  }
+
+  @include desktop {
+    justify-content: flex-start;
+    flex-basis: 45%;
+  }
+}
+
+.newsletter__email,
+.newsletter__submit-button {
+  letter-spacing: 1px;
+  font-size: 1.0625rem;
+
+  @include mobile {
+    width: 100%;
+  }
+}
+
+.newsletter__email {
+  padding: 0.875rem;
+
+  &::placeholder {
+    text-transform: uppercase;
+    color: #999;
+  }
+
+  @include desktop {
+    max-width: 25vw;
+  }
+}
+
+.newsletter__submit-button {
+  background-color: $main-button-background;
+  border: 0;
+  color: #cfcfcf;
+  text-transform: uppercase;
+  padding: 1rem;
+  cursor: pointer;
+  transition: color 0.2s ease, letter-spacing 0.2s ease;
+
+  &:hover {
+    color: $text-white;
+    letter-spacing: 1.25px;
+  }
+
+  @include mobile {
+    margin-top: 1.5rem;
+    border: 1px solid #444;
+  }
+
+  @include tablet-up {
+    width: 8.125rem;
+  }
+}
