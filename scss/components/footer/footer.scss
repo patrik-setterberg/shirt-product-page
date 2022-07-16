@@ -10,7 +10,6 @@
 
   @include tablet {
     padding-top: 4rem;
-    
   }
 
   @include desktop {
@@ -20,6 +19,7 @@
 
 .footer__menu {
   display: flex;
+  flex-direction: column;
   padding-bottom: 3.125rem;
   border-bottom: 1px solid $footer-element-divider;
 
@@ -27,8 +27,94 @@
     padding-bottom: 4rem;
   }
 
+  @include tablet-up {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
   @include desktop {
     padding-bottom: 7.5rem;
+  }
+}
+
+.footer__menu-group {
+  &:last-of-type {
+    margin-block-end: 0;
+
+    @include mobile {
+      margin-block-start: 0;
+    }
+  }
+
+  &:nth-last-of-type(2) {
+    @include tablet {
+      margin-block-end: 0;
+    }
+  }
+
+  @include tablet {
+    flex-basis: 50%;
+  }
+
+  @include desktop {
+    flex-basis: 25%;
+    margin-block-start: 0;
+    margin-block-end: 0;
+  }
+}
+
+.footer__menu-item {
+  line-height: 1.67;
+
+  & + & {
+    margin-top: 0.875rem;
+  }
+}
+
+.footer__menu-item--large {
+  letter-spacing: 1.5px;
+  font-size: 1.125rem;
+
+  & .footer__menu-link,
+  & .footer__menu-link:visited {
+    color: $text-white;
+  }
+
+  @include desktop {
+    font-size: 1.25rem;
+    padding-bottom: 0.5rem;
+  }
+}
+
+.footer__menu-item--large,
+.footer__menu-item span {
+  text-transform: uppercase;
+}
+
+.footer__menu-item--large,
+.footer__menu-item--strong {
+  font-weight: 700;
+}
+
+.footer__menu-item span,
+.footer__menu-link,
+.footer__menu-link:visited {
+  color: #aaa;
+}
+
+.footer__menu-link,
+.footer__menu-link:visited {
+  text-decoration: none;
+  transition: color 0.2s ease;
+
+  &:hover {
+    color: $text-white;
+  }
+}
+
+.footer__menu-item--empty {
+  @include mobile {
+    display: none;
   }
 }
 
@@ -42,10 +128,6 @@
   padding-top: 2.5rem;
   padding-bottom: 2.5rem;
 
-  & span {
-    font-weight: 600;
-  }
-
   @include tablet {
     max-width: 90%;
     padding-top: 3.125rem;
@@ -53,7 +135,7 @@
   }
 
   @include desktop {
-    max-width: 82%;
+    max-width: 72rem;
     padding-top: 4rem;
     padding-bottom: 3.5rem;
   }
