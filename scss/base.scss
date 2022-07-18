@@ -22,7 +22,7 @@ body {
 }
 
 img {
-  display: block;
+  display: inline-block;
 }
 
 input,
@@ -73,12 +73,18 @@ ul {
   flex-direction: column;
   background: linear-gradient(to bottom, $main-body-background-top, $main-body-background-bottom 95%);
 
-  @include tablet-down {
-    padding-top: 10rem;
+  @include mobile {
+    padding-top: 8rem;
+  }
+
+  @include tablet {
+    padding-top: 7.5625rem;
   }
 }
 
 .header {
+  z-index: 10;
+
   @include tablet-down {
     position: absolute;
     width: 100%;

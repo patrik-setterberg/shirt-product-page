@@ -61,9 +61,6 @@ if (imgs) {
     }
   });
 
-  let startX = 0;
-  let endX = 0;
-
   // Very basic swipe navigation.
   const swipe = (start, end) => {
     if (start > end && activeImg < imgs.length) {
@@ -76,6 +73,9 @@ if (imgs) {
     updateActiveClass();
     setCarouselOffset();
   };
+
+  let startX = 0;
+  let endX = 0;
 
   overlay.addEventListener(
     "touchstart",
