@@ -1,8 +1,11 @@
 $carousel-item-transition: 0.25s ease-in-out;
 
 .img-carousel {
+  grid-column: 1 / span 1;
+  grid-row: 1 / span 1;
   position: relative;
   max-width: 923px;
+  height: fit-content;
   overflow: hidden;
 
   @include tablet-up {
@@ -10,10 +13,13 @@ $carousel-item-transition: 0.25s ease-in-out;
   }
 
   @include tablet {
-    margin-bottom: 5rem;
+    grid-column: 1 / span 1;
+    grid-row: 1 / span 1;
   }
 
   @include desktop {
+    grid-column: 1 / span 1;
+    grid-row: 1 / span 2;
     margin-bottom: 6.25rem;
   }
 }
