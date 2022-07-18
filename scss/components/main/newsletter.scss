@@ -138,8 +138,12 @@
   transition: color 0.2s ease, letter-spacing 0.2s ease;
 
   &:hover {
-    color: $text-white;
+    color: $white;
     letter-spacing: 1.25px;
+  }
+
+  &:active {
+    color: #cfcfcf;
   }
 
   @include mobile {

@@ -64,8 +64,8 @@
       </nav>
     </header>
     <main class="main">
-      <!-- PRODUCT -->
       <article class="product">
+        <!-- PRODUCT IMG CAROUSEL -->
         <section class="img-carousel">
           <div class="img-carousel__imgs" id="img-carousel">
             <img src="./img/main.webp" alt="Gentleman wearing Hackett shirt" />
@@ -75,52 +75,116 @@
           <div class="img-carousel__overlay" id="img-carousel-overlay"></div>
           <div class="img-carousel__controls" id="img-carousel-controls"></div>
         </section>
-        <section class="product-information">product information</section>
+        <!-- PRODUCT INFORMATION -->
+        <section class="product-information">
+          <span class="promoted-product__promo-label promoted-product__promo-label--nyhet">
+            Nyhet
+          </span>
+          <span class="product-information__lagerstatus product-information__lagerstatus--in-stock">
+            Finns i lager
+          </span>
+          <img class="product-information__manufacturer-logo" src="./img/Hackett.png" alt="Hackett logo">
+          <h1 class="product-information__product-name">
+            Hackett Garment Dyed Oxford Slim Fit Shirt White
+          </h1>
+          <span class="product-information__price">999 kr</span>
+          <div class="size-selector" id="size-selector">
+            <span class="size-selector__text">Välj storlek</span>
+            <button class="size-selector__button size-selector__button--active" aria-label="Small">
+              S
+            </button>
+            <button class="size-selector__button" aria-label="Medium">
+              M
+            </button>
+            <button class="size-selector__button" aria-label="Large">
+              L
+            </button>
+          </div>
+          <button class="product-information__add-to-cart-btn">
+            Lägg i varukorg
+          </button>
+          <span class="product-information__artikelnummer">
+            Artikelnummer: <span>HM3049975AL</span>
+          </span>
+        </section>
+
       </article>
       
       <div class="additional-products">
         <span>Mer från Hackett London</span>
-        <a href="#">Se alla Hackett produkter <img src="./icons/arrow_forward_ios_black_24dp.svg" alt="Arrow right icon"></a>
+        <a href="#">
+          Se alla Hackett produkter <img src="./icons/arrow_forward_ios_black_24dp.svg" alt="Arrow right icon">
+        </a>
       </div>
 
       <!-- PROMOTED PRODUCTS -->
       <section class="promoted-products">
-        <a href="#" class="promoted-product" aria-label="Hackett Garment Dyed Oxford Slim Fit White">
+        <a href="#" class="promoted-product" aria-label="Hackett Garment Dyed Oxford Slim Fit Shirt White">
           <img class="promoted-product__img" src="./img/SS16_HM401415_951_01_thumb.webp" alt="Gentleman wearing brown vest">
-          <span class="promoted-product__brand">Hackett London</span>
-          <span class="promoted-product__product-name">Hackett Garment Dyed Oxford Slim Fit White</span>
+          <span class="promoted-product__brand">
+            Hackett London
+          </span>
+          <span class="promoted-product__product-name">
+            Hackett Garment Dyed Oxford Slim Fit Shirt White
+          </span>
           <div class="promoted-product__price-wrapper">
-            <span class="promoted-product__price">999 kr</span>
+            <span class="promoted-product__price">
+              999 kr
+            </span>
           </div>
-          <span class="promoted-product__promo-label promoted-product__promo-label--nyhet">Nyhet</span>
+          <span class="promoted-product__promo-label promoted-product__promo-label--nyhet">
+            Nyhet
+          </span>
         </a>
 
-        <a href="#" class="promoted-product" aria-label="Hackett Garment Dyed Oxford Slim Fit White">
+        <a href="#" class="promoted-product" aria-label="Hackett Garment Dyed Oxford Slim Fit Shirt White">
           <img class="promoted-product__img" src="./img/SS16_HM441696_869_01_thumb.webp" alt="Gentleman wearing light brown double breasted blazer">
-          <span class="promoted-product__brand">Hackett London</span>
-          <span class="promoted-product__product-name">Hackett Garment Dyed Oxford Slim Fit White</span>
+          <span class="promoted-product__brand">
+            Hackett London
+          </span>
+          <span class="promoted-product__product-name">
+            Hackett Garment Dyed Oxford Slim Fit Shirt White
+          </span>
           <div class="promoted-product__price-wrapper">
-            <span class="promoted-product__price promoted-product__price--strikethrough">999 kr</span>
-            <span class="promoted-product__price promoted-product__price--sale">799 kr</span>
+            <span class="promoted-product__price promoted-product__price--strikethrough">
+              999 kr
+            </span>
+            <span class="promoted-product__price promoted-product__price--sale">
+              799 kr
+            </span>
           </div>
-          <span class="promoted-product__promo-label promoted-product__promo-label--kampanj">Kampanj</span>
+          <span class="promoted-product__promo-label promoted-product__promo-label--kampanj">
+            Kampanj
+          </span>
         </a>
 
-        <a href="#" class="promoted-product" aria-label="Hackett Garment Dyed Oxford Slim Fit White">
+        <a href="#" class="promoted-product" aria-label="Hackett Garment Dyed Oxford Slim Fit Shirt White">
           <img class="promoted-product__img" src="./img/SS16_HM401400_561_01_thumb.webp" alt="Gentleman wearing blue jacket">
-          <span class="promoted-product__brand">Hackett London</span>
-          <span class="promoted-product__product-name">Hackett Garment Dyed Oxford Slim Fit White</span>
+          <span class="promoted-product__brand">
+            Hackett London
+          </span>
+          <span class="promoted-product__product-name">
+            Hackett Garment Dyed Oxford Slim Fit Shirt White
+          </span>
           <div class="promoted-product__price-wrapper">
-            <span class="promoted-product__price">999 kr</span>
+            <span class="promoted-product__price">
+              999 kr
+            </span>
           </div>
         </a>
 
-        <a href="#" class="promoted-product" aria-label="Hackett Garment Dyed Oxford Slim Fit White">
+        <a href="#" class="promoted-product" aria-label="Hackett Garment Dyed Oxford Slim Fit Shirt White">
           <img class="promoted-product__img" src="./img/SS16_HM550478_595_01_thumb.webp" alt="Gentleman wearing gray sweatshirt">
-          <span class="promoted-product__brand">Hackett London</span>
-          <span class="promoted-product__product-name">Hackett Garment Dyed Oxford Slim Fit White</span>
+          <span class="promoted-product__brand">
+            Hackett London
+          </span>
+          <span class="promoted-product__product-name">
+            Hackett Garment Dyed Oxford Slim Fit Shirt White
+          </span>
           <div class="promoted-product__price-wrapper">
-            <span class="promoted-product__price">999 kr</span>
+            <span class="promoted-product__price">
+              999 kr
+            </span>
           </div>
         </a>
       </section>
@@ -263,5 +327,6 @@
 
     <script src="./js/main-menu.js"></script>
     <script src="./js/img-carousel.js"></script>
+    <script src="./js/size-selector.js"></script>
   </body>
 </html>

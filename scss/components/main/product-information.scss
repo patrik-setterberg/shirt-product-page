@@ -1,5 +1,145 @@
 .product-information {
+  position: relative;
+
   @include tablet-up {
     flex: 1 1 45%;
+  }
+}
+
+.product-information__lagerstatus {
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+  font-size: 0.875rem;
+  color: $text-black;
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: var(--default-spacing);
+
+  &::before {
+    content: "";
+    display: inline-block;
+    width: 1.125rem;
+    height: 1.125rem;
+    margin-right: 0.5rem;
+  }
+
+  &.product-information__lagerstatus--in-stock::before {
+    background: url("../../icons/check_green_24dp.svg") no-repeat center;
+  }
+}
+
+.product-information__manufacturer-logo {
+  display: flex;
+  margin: 3.75rem auto 1rem auto;
+}
+
+.product-information__product-name {
+  text-align: center;
+  font-size: 1.25rem;
+  font-weight: 400;
+  line-height: 1.5;
+  max-width: 25rem;
+  margin: 0 auto;
+  padding-left: var(--default-spacing);
+  padding-right: var(--default-spacing);
+
+  @include desktop {
+    font-size: 1.5rem;
+  }
+}
+
+.product-information__price {
+  display: block;
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-top: 1rem;
+  margin-bottom: 1.5rem;
+
+  @include desktop {
+    margin-top: 1.25rem;
+    margin-bottom: 1.875rem;
+  }
+}
+
+.size-selector {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+}
+
+.size-selector__text {
+  flex-basis: 100%;
+  text-transform: uppercase;
+}
+
+.size-selector__button {
+  background-color: $white;
+  border: 1px solid $light-gray-default;
+  color: $black;
+  width: 2.25rem;
+  padding: 0.375rem;
+  margin-top: 1rem;
+
+  &.size-selector__button--active {
+    background-color: $dark-gray-background;
+    border-color: $dark-gray-background;
+    color: $white;
+  }
+
+  &:not(.size-selector__button--active) {
+    cursor: pointer;
+  }
+
+  & + & {
+    margin-left: 0.5rem;
+  }
+}
+
+.product-information__add-to-cart-btn {
+  display: block;
+  text-transform: uppercase;
+  background-color: $dark-gray-background;
+  color: $white;
+  border: 0;
+  padding: 0.875rem;
+  width: 14rem;
+  margin: 1.25rem auto;
+  cursor: pointer;
+  letter-spacing: normal;
+  transition: letter-spacing 0.2s ease;
+
+  &:hover {
+    letter-spacing: 0.25px;
+  }
+
+  &:active {
+    color: #cfcfcf;
+    background-color: $black;
+  }
+
+  @include desktop {
+    font-size: 1.125rem;
+    margin: 1.5rem auto;
+  }
+}
+
+.product-information__artikelnummer {
+  display: block;
+  text-align: center;
+  text-transform: uppercase;
+  color: #aaaaaa;
+  letter-spacing: 1px;
+  font-size: 0.875rem;
+
+  & span {
+    color: $black;
+  }
+
+  @include desktop {
+    font-size: 0.9375rem;
   }
 }

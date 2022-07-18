@@ -8,7 +8,7 @@
  * Includes swipe functionality which could definitely be improved.
  */
 
-const BUTTON_ACTIVE_CLASS = "img-carousel__button--active";
+const IMG_CAROUSEL_BUTTON_ACTIVE_CLASS = "img-carousel__button--active";
 
 const carousel = document.getElementById("img-carousel");
 const controls = document.getElementById("img-carousel-controls");
@@ -25,7 +25,7 @@ if (imgs) {
     button.setAttribute("data-img", i + 1);
     button.setAttribute("aria-label", `Click to see image number ${i + 1}`);
     button.classList.add("img-carousel__button");
-    i === 0 && button.classList.add(BUTTON_ACTIVE_CLASS);
+    i === 0 && button.classList.add(IMG_CAROUSEL_BUTTON_ACTIVE_CLASS);
     controls.appendChild(button);
   }
 
@@ -33,11 +33,11 @@ if (imgs) {
   // the button which has same data-attr value equal to activeImg.
   const updateActiveClass = () => {
     controls.querySelectorAll("button").forEach((button) => {
-      button && button.classList.remove(BUTTON_ACTIVE_CLASS);
+      button && button.classList.remove(IMG_CAROUSEL_BUTTON_ACTIVE_CLASS);
     });
 
     const button = controls.querySelector(`button[data-img="${activeImg}"]`);
-    button && button.classList.add(BUTTON_ACTIVE_CLASS);
+    button && button.classList.add(IMG_CAROUSEL_BUTTON_ACTIVE_CLASS);
   };
 
   // Set carousel items' transform: translateX.
@@ -49,7 +49,7 @@ if (imgs) {
   controls.addEventListener("click", (e) => {
     if (
       e.target.tagName === "BUTTON" &&
-      !e.target.classList.contains(BUTTON_ACTIVE_CLASS)
+      !e.target.classList.contains(IMG_CAROUSEL_BUTTON_ACTIVE_CLASS)
     ) {
       // Get clicked button's data-attr value and update activeImg.
       const dataAttrVal = Number(e.target.dataset.img);
