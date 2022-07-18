@@ -8,6 +8,14 @@ $carousel-item-transition: 0.25s ease-in-out;
   @include tablet-up {
     flex: 1 1 55%;
   }
+
+  @include tablet {
+    margin-bottom: 5rem;
+  }
+
+  @include desktop {
+    margin-bottom: 6.25rem;
+  }
 }
 
 .img-carousel__imgs {

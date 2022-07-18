@@ -7,9 +7,14 @@
   padding: 0 var(--default-spacing);
   margin: 0 auto;
   gap: var(--default-spacing);
-  margin-bottom: 3rem; //TEMP
+  margin-bottom: 3.75rem;
+
+  @include tablet {
+    margin-bottom: 5rem;
+  }
 
   @include desktop {
+    margin-bottom: 7.5rem;
     gap: 1.58rem;
   }
 }
