@@ -26,6 +26,7 @@
 
   & li {
     display: flex;
+    align-items: center;
 
     & + li {
       @include tablet-down {
@@ -110,6 +111,25 @@
     font-size: 1.25rem;
     order: 0;
     padding: calc(var(--default-spacing) * 1.5);
+  }
+}
+
+.shopping-cart {
+  display: flex;
+  align-items: center;
+
+  &::after {
+    content: '';
+    display: flex;
+    background: url("../../icons/shopping_cart_black_24dp.svg") no-repeat center;
+    width: 1.5rem;
+    height: 1.5rem;
+    margin-left: 0.5rem;
+
+    @include desktop {
+      width: 1.75rem;
+      height: 1.75rem;
+    }
   }
 }
 

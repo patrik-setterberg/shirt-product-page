@@ -6,11 +6,11 @@
   width: 100%;
   padding: 0 var(--default-spacing);
   margin: 0 auto;
-  gap: var(--default-spacing);
+  gap: calc(var(--default-spacing) * 2) var(--default-spacing);
   margin-bottom: 3.75rem;
 
   @include tablet {
-    margin-bottom: 5rem;
+    gap: var(--default-spacing);
   }
 
   @include desktop {

@@ -21,6 +21,7 @@
 }
 
 .details {
+  position: relative;
   border-top: 1px solid $light-gray-default;
 
   &:last-of-type {
@@ -29,6 +30,9 @@
 }
 
 .details__summary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   text-transform: uppercase;
   font-size: 0.875rem;
   color: $light-gray-default;
@@ -38,6 +42,20 @@
   &::marker {
     display: none;
     content: "";
+  }
+
+  &::after {
+    content: '';
+    display: block;
+    width: 1.25rem;
+    height: 1.25rem;
+    opacity: 0.3;
+    transform: rotate(90deg);
+    background: url("../../icons/arrow_forward_ios_black_24dp.svg") no-repeat center;
+
+    .details[open] & {
+      opacity: 1;
+    }
   }
 
   .details[open] & {
