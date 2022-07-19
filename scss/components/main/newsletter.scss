@@ -46,7 +46,7 @@
   display: flex;
   align-items: center;
   flex: 1;
-  color: $text-white;
+  color: $white;
 }
 
 .newsletter__text {
@@ -120,7 +120,7 @@
 
   &::placeholder {
     text-transform: uppercase;
-    color: #999;
+    color: $light-gray-default;
   }
 
   @include desktop {
@@ -129,7 +129,7 @@
 }
 
 .newsletter__submit-button {
-  background-color: $main-button-background;
+  background-color: #222336;
   border: 0;
   color: #cfcfcf;
   text-transform: uppercase;

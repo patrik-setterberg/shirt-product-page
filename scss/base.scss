@@ -71,7 +71,7 @@ ul {
   flex: 1 0 auto;
   display: flex;
   flex-direction: column;
-  background: linear-gradient(to bottom, $main-body-background-top, $main-body-background-bottom 95%);
+  background: linear-gradient(to bottom, #ececec, $white 95%);
 
   @include mobile {
     padding-top: 8rem;

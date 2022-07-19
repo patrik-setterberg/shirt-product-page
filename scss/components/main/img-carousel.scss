@@ -60,7 +60,12 @@ $carousel-item-transition: 0.25s ease-in-out;
   border-radius: 50%;
   border: 1px solid rgba(34, 34, 34, 0.5);
   opacity: 0.5;
-  transition: opacity $carousel-item-transition;
+  transition: opacity $carousel-item-transition, width 0.2s ease, height 0.2s ease;
+
+  .img-carousel:hover & {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
 
   & + & {
     margin-left: 0.875rem;

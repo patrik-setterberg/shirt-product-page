@@ -46,7 +46,7 @@
   text-align: center;
   font-weight: 700;
   text-transform: uppercase;
-  color: $text-black;
+  color: $black;
   margin-bottom: 0.625rem;
 }
 
@@ -57,7 +57,7 @@
   text-align: center;
   font-size: 0.875rem;
   line-height: 1.78;
-  color: #999;
+  color: $light-gray-default;
   transition: color 0.3s ease;
 
   .promoted-product:hover & {
@@ -74,7 +74,7 @@
 .promoted-product__price {
   font-size: 1.125rem;
   font-weight: 700;
-  color: $text-black;
+  color: $black;
 }
 
 .promoted-product__price.promoted-product__price--strikethrough {
@@ -85,23 +85,23 @@
 .promoted-product__price.promoted-product__price--sale {
   display: inline-block;
   margin-left: 0.75rem;
-  color: $sale-price;
+  color: #d21212;
 }
 
 .promoted-product__promo-label {
   position: absolute;
   width: 6.25rem;
   text-align: center;
-  color: $text-white;
+  color: $white;
   letter-spacing: 1px;
   text-transform: uppercase;
   padding: 0.375rem;
 }
 
 .promoted-product__promo-label--nyhet {
-  background-color: $nyhet-label-background;
+  background-color: $black;
 }
 
 .promoted-product__promo-label--kampanj {
-  background-color: $kampanj-label-background;
+  background-color: $dark-blue;
 }

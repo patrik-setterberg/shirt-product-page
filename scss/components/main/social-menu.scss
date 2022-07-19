@@ -1,5 +1,5 @@
 .social-menu {
-  background-color: $social-background;
+  background-color: #f1f1f1;
   margin-top: auto;
 }
 
@@ -28,13 +28,17 @@
   text-align: center;
   text-decoration: none;
   letter-spacing: 1.25px;
-  color: $text-black;
+  color: $black;
   padding: var(--default-spacing);
-  border: 2px solid $text-black;
+  border: 2px solid $black;
   transition: all 0.2s ease;
 
   &:hover {
     background-color: #f9f9f9;
     letter-spacing: 1.5px;
+  }
+
+  @include desktop {
+    font-size: 1.125rem;
   }
 }

@@ -1,12 +1,13 @@
 # shirt-product-page
 
-## Build CSS
-HTML file expects a stylesheet called `style.css` in `build/css`. Build it by running
+## CSS
+For wide browser compatibility, the compiled CSS has been run through an online version of `autoprefixer` (https://autoprefixer.github.io/) and then minified (https://www.cleancss.com/css-minify/)
+
+If you wish, CSS can be built by running
 ```
 sass scss/style.scss build/css/style.css
 ```
-from project root directory.
+from project root directory. However, doing so will replace the vendor prefixed and minified CSS file included in this repo.
 
-
-## Notes
-Kanske fixa nått som ordnar vendor prefixes... Annars åtminstone förklara att det behövs och hur jag skulle göra.
+## Icons
+Icons downloaded from: https://fonts.google.com/icons?icon.set=Material+Icons

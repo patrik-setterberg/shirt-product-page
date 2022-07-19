@@ -1,5 +1,5 @@
 .header-top {
-  background-color: $dark-gray-background;
+  background-color: $dark-gray-default;
 }
 
 .header-top__inner {
@@ -48,4 +48,9 @@
 
 .header-top__item--link {
   text-decoration: none;
+  transition: color 0.2s ease;
+  
+  &:hover {
+    color: $white;
+  }
 }
