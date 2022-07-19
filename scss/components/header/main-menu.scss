@@ -75,7 +75,7 @@
   @include tablet-down {
     margin-top: 0;
     padding-top: var(--default-spacing);
-    border-top: 1px solid #eeeeee; // VARIABLE?
+    border-top: 1px solid #eeeeee;
   }
 }
 
@@ -210,23 +210,3 @@
 .hamburger__line--bottom {
   transform-origin: 0 100%;
 }
-
-/*
-.hamburger__focus-outline {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  pointer-events: none;
-  transition: width 0.2s ease;
-}
-
-.hamburger__checkbox:focus ~ .hamburger__focus-outline {
-  outline: 2px dashed currentColor;
-  outline-offset: 5px;
-}
-
-.hamburger__checkbox:checked ~ .hamburger__focus-outline {
-  width: 77%;
-} */
