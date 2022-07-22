@@ -9,5 +9,6 @@ sass scss/style.scss build/css/style.css
 ```
 from project root directory. However, doing so will replace the vendor prefixed and minified CSS file included in this repo.
 
-## Icons
+## Icons & Fonts
+Fonts imported from https://fonts.google.com/
 Icons downloaded from: https://fonts.google.com/icons?icon.set=Material+Icons

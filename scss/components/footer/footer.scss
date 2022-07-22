@@ -34,6 +34,7 @@
 
   @include desktop {
     padding-bottom: 7.5rem;
+    font-size: 1.125rem;
   }
 }
 
@@ -72,7 +73,7 @@
 }
 
 .footer__menu-item--large {
-  letter-spacing: 1.5px;
+  letter-spacing: 1.75px;
   font-size: 1.125rem;
 
   & .footer__menu-link,
@@ -81,7 +82,7 @@
   }
 
   @include desktop {
-    font-size: 1.25rem;
+    font-size: 1.375rem;
     padding-bottom: 0.5rem;
   }
 }
